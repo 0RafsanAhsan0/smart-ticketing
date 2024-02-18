@@ -6,6 +6,13 @@ buyTickets.addEventListener("click", function () {
   seatAndBill.scrollIntoView();
 });
 
+//from modal to header
+const modalClose = document.getElementById("modal-close");
+const header = document.getElementById("header");
+modalClose.addEventListener("click", function () {
+  header.scrollIntoView();
+});
+
 // -------Seat eventListenar--------
 const allSeat = document.getElementsByClassName("btn-seat");
 let count = 0;
@@ -14,7 +21,6 @@ for (const seat of allSeat) {
   seat.addEventListener("click", function () {
     count = count + 1;
     count2 = count2 - 1;
-
 
     // set button color
     seat.style.backgroundColor = "#1DD100";
@@ -27,10 +33,10 @@ for (const seat of allSeat) {
 
     // showing seat and price description
     const seatName = seat.innerText;
-    const TicketPrice = document.getElementById("t-price").innerText
+    const TicketPrice = document.getElementById("t-price").innerText;
     const convertedTicketPrice = parseInt(TicketPrice);
 
-    const tDescription = document.getElementById("t-description")
+    const tDescription = document.getElementById("t-description");
 
     const li = document.createElement("li");
     const p = document.createElement("p");
@@ -45,11 +51,13 @@ for (const seat of allSeat) {
     // total price
     const totalPrice = document.getElementById("total-price").innerText;
     const convertedTotalPrice = parseInt(totalPrice);
-    document.getElementById("total-price").innerText = convertedTotalPrice + convertedTicketPrice;
-    
+    document.getElementById("total-price").innerText =
+      convertedTotalPrice + convertedTicketPrice;
+
     //grand total
     const grandTotal = document.getElementById("grand-total").innerText;
     const convertedGrandTotal = parseInt(grandTotal);
-    document.getElementById("grand-total").innerText = convertedGrandTotal + convertedTicketPrice;
+    document.getElementById("grand-total").innerText =
+      convertedGrandTotal + convertedTicketPrice;
   });
 }

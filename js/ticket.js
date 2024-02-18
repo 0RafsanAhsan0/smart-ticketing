@@ -6,4 +6,11 @@ buyTickets.addEventListener("click",function(){
     seatAndBill.scrollIntoView();
 })
 
-// seat select
+// seat button color
+const allSeat = document.getElementsByClassName("btn-seat");
+let count = 0;
+for(const seat of allSeat){
+    seat.addEventListener("click", function(){
+        seat.style.backgroundColor = "#1DD100";
+    })
+}

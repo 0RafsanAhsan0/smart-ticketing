@@ -23,6 +23,7 @@
 </head>
 
 <body class="font-raleway">
+    <!-- header -->
     <header class="container mx-auto">
         <!-- navbar start -->
         <div class="navbar bg-base-100">
@@ -83,7 +84,7 @@
         </div>
         <!-- banner end -->
     </header>
-
+    <!-- main -->
     <main class="container mx-auto">
         <!-- discount section -->
         <section class="mt-32 space-y-20">
@@ -113,7 +114,7 @@
                         </div>
                         <a class="btn bg-[#1DD1001A] text-[#1DD100] font-extrabold px-7">
                             <img class="border-dashed border-2 border-gray-500 p-1 " src="./images/seat-green.png"
-                                alt="">40
+                                alt=""><span id="seat-count">40</span>
                             Seats left
                         </a>
                     </div>
@@ -139,7 +140,7 @@
                         <img class="border-dashed border-2 border-gray-500 rounded-full" src="./images/fare.png" alt="">
                     </div>
                     <div class="space-y-4">
-                        <h2 class="text-2xl font-semibold">550 tk</h2>
+                        <h2 class="text-2xl font-semibold"><span id="t-price">550</span> tk</h2>
                         <p class="text-xl font-semibold text-gray-500">Per Seat</p>
                     </div>
                 </div>
@@ -147,141 +148,192 @@
         </section>
         <!--seat and billing section  -->
         <section class="mt-28">
-            <div class="flex justify-between flex-col lg:flex-row"> 
+            <div class="flex justify-between flex-col lg:flex-row bg-gray-200 p-10 rounded-2xl">
                 <!-- left side seats -->
-            <div class="space-y-7 w-3/5">
-                <h2 class="border-dashed border-b-2 border-gray-500 text-2xl font-semibold">Select Your Seat</h2>
-            <div class="flex justify-between border-dashed border-b-2 border-gray-500">
-                <div class="flex gap-2 ">
-                    <img src="./images/seat-gray.png" alt="">
-                    <h1 class="font-semibold">Available</h1>
-                </div>
-                <div class="flex gap-2">
-                    <img src="./images/seat-green-filled.png" alt="">
-                    <h1 class="text-[#1DD100] font-semibold">selected</h1>
-                </div>
-            </div>
-            <!-- seats -->
-            <div class="space-y-4">
+                <div class="space-y-7 lg:w-3/5">
+                    <h2 class="border-dashed border-b-2 border-gray-500 text-2xl font-semibold">Select Your Seat</h2>
+                    <div class="flex justify-between border-dashed border-b-2 border-gray-500">
+                        <div class="flex gap-2 ">
+                            <img src="./images/seat-gray.png" alt="">
+                            <h1 class="font-semibold">Available</h1>
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="./images/seat-green-filled.png" alt="">
+                            <h1 class="text-[#1DD100] font-semibold">selected</h1>
+                        </div>
+                    </div>
+                    <!-- seats -->
+                    <div class="space-y-9">
 
-                <!-- a seats -->
-                <div class="flex justify-around items-center">
-                    A
-                    <button class="btn-seat btn px-8">A1</button>
-                    <button class="btn-seat btn px-8">A2</button>
-                    <button class="btn-seat btn px-8">A3</button>
-                    <button class="btn-seat btn px-8">A4</button>
-                </div>
-                <!-- b seats -->
-                <div class="flex justify-around items-center">
-                    B
-                    <button class="btn-seat btn px-8">B1</button>
-                    <button class="btn-seat btn px-8">B2</button>
-                    <button class="btn-seat btn px-8">B3</button>
-                    <button class="btn-seat btn px-8">B4</button>
-                </div>
-                <!-- c seats -->
-                <div class="flex justify-around items-center">
-                    C
-                    <button class="btn-seat btn px-8">C1</button>
-                    <button class="btn-seat btn px-8">C2</button>
-                    <button class="btn-seat btn px-8">C3</button>
-                    <button class="btn-seat btn px-8">C4</button>
-                </div>
-                <!-- d seats -->
-                <div class="flex justify-around items-center">
-                    D
-                    <button class=" btn-seat btn px-8">D1</button>
-                    <button class=" btn-seat btn px-8">D2</button>
-                    <button class=" btn-seat btn px-8">D3</button>
-                    <button class=" btn-seat btn px-8">D4</button>
-                </div>
-                <!-- e seats -->
-                <div class="flex justify-around items-center">
-                    E
-                    <button class="btn-seat btn px-8">E1</button>
-                    <button class="btn-seat btn px-8">E2</button>
-                    <button class="btn-seat btn px-8">E3</button>
-                    <button class="btn-seat btn px-8">E4</button>
-                </div>
-                <!-- f seats -->
-                <div class="flex justify-around items-center">
-                    F
-                    <button class="btn-seat btn px-8">F1</button>
-                    <button class="btn-seat btn px-8">F2</button>
-                    <button class="btn-seat btn px-8">F3</button>
-                    <button class="btn-seat btn px-8">F4</button>
-                </div>
-                <!-- g seats -->
-                <div class="flex justify-around items-center">
-                    G
-                    <button class="btn-seat btn px-8">G1</button>
-                    <button class="btn-seat btn px-8">G2</button>
-                    <button class="btn-seat btn px-8">G3</button>
-                    <button class="btn-seat btn px-8">G4</button>
-                </div>
-                <!-- h seats -->
-                <div class="flex justify-around items-center">
-                    H
-                    <button class="btn-seat btn px-8">H1</button>
-                    <button class="btn-seat btn px-8">H2</button>
-                    <button class="btn-seat btn px-8">H3</button>
-                    <button class="btn-seat btn px-8">H4</button>
-                </div>
-                <!-- i seats -->
-                <div class="flex justify-around items-center">
-                    I
-                    <button class="btn-seat btn px-8">I1</button>
-                    <button class="btn-seat btn px-8">I2</button>
-                    <button class="btn-seat btn px-8">I3</button>
-                    <button class="btn-seat btn px-8">I4</button>
-                </div>
-                <!-- j seats -->
-                <div class="flex justify-around items-center">
-                    J
-                    <button class="btn-seat btn px-8">J1</button>
-                    <button class="btn-seat btn px-8">J2</button>
-                    <button class="btn-seat btn px-8">J3</button>
-                    <button class="btn-seat btn px-8">J4</button>
-                </div>
-            </div>
-            </div>
-            <!-- right side bill -->
-            <div class="space-y-7">
-                <h2 class="border-dashed border-b-2 border-gray-500 text-2xl font-semibold">Bills</h2>
-                <div class="bg-[#ddddddea] space-y-10 p-12 rounded-2xl">
-                    <div class="flex justify-between border-dashed border-b-2 border-gray-500 ">
-                        <h4>seat<span class="bg-[#1DD100] rounded-2xl px-2">0</span></h4>
-                        <h4>price</h4>
+                        <!-- a seats -->
+                        <div class="flex justify-around items-center gap-2">
+                            A
+                            <button class="btn-seat btn px-8">A1</button>
+                            <button class="btn-seat btn px-8">A2</button>
+                            <button class="btn-seat btn px-8">A3</button>
+                            <button class="btn-seat btn px-8">A4</button>
+                        </div>
+                        <!-- b seats -->
+                        <div class="flex justify-around items-center gap-2">
+                            B
+                            <button class="btn-seat btn px-8">B1</button>
+                            <button class="btn-seat btn px-8">B2</button>
+                            <button class="btn-seat btn px-8">B3</button>
+                            <button class="btn-seat btn px-8">B4</button>
+                        </div>
+                        <!-- c seats -->
+                        <div class="flex justify-around items-center gap-2">
+                            C
+                            <button class="btn-seat btn px-8">C1</button>
+                            <button class="btn-seat btn px-8">C2</button>
+                            <button class="btn-seat btn px-8">C3</button>
+                            <button class="btn-seat btn px-8">C4</button>
+                        </div>
+                        <!-- d seats -->
+                        <div class="flex justify-around items-center gap-2">
+                            D
+                            <button class=" btn-seat btn px-8">D1</button>
+                            <button class=" btn-seat btn px-8">D2</button>
+                            <button class=" btn-seat btn px-8">D3</button>
+                            <button class=" btn-seat btn px-8">D4</button>
+                        </div>
+                        <!-- e seats -->
+                        <div class="flex justify-around items-center gap-2">
+                            E
+                            <button class="btn-seat btn px-8">E1</button>
+                            <button class="btn-seat btn px-8">E2</button>
+                            <button class="btn-seat btn px-8">E3</button>
+                            <button class="btn-seat btn px-8">E4</button>
+                        </div>
+                        <!-- f seats -->
+                        <div class="flex justify-around items-center gap-2">
+                            F
+                            <button class="btn-seat btn px-8">F1</button>
+                            <button class="btn-seat btn px-8">F2</button>
+                            <button class="btn-seat btn px-8">F3</button>
+                            <button class="btn-seat btn px-8">F4</button>
+                        </div>
+                        <!-- g seats -->
+                        <div class="flex justify-around items-center gap-2">
+                            G
+                            <button class="btn-seat btn px-8">G1</button>
+                            <button class="btn-seat btn px-8">G2</button>
+                            <button class="btn-seat btn px-8">G3</button>
+                            <button class="btn-seat btn px-8">G4</button>
+                        </div>
+                        <!-- h seats -->
+                        <div class="flex justify-around items-center gap-2">
+                            H
+                            <button class="btn-seat btn px-8">H1</button>
+                            <button class="btn-seat btn px-8">H2</button>
+                            <button class="btn-seat btn px-8">H3</button>
+                            <button class="btn-seat btn px-8">H4</button>
+                        </div>
+                        <!-- i seats -->
+                        <div class="flex justify-around items-center gap-2">
+                            I
+                            <button class="btn-seat btn px-8">I1</button>
+                            <button class="btn-seat btn px-8">I2</button>
+                            <button class="btn-seat btn px-8">I3</button>
+                            <button class="btn-seat btn px-8">I4</button>
+                        </div>
+                        <!-- j seats -->
+                        <div class="flex justify-around items-center gap-2">
+                            J
+                            <button class="btn-seat btn px-8">J1</button>
+                            <button class="btn-seat btn px-8">J2</button>
+                            <button class="btn-seat btn px-8">J3</button>
+                            <button class="btn-seat btn px-8">J4</button>
+                        </div>
                     </div>
-                    <div class="flex justify-between">
-                        <p>c2</p>
-                        <p>550</p>
-                    </div>
-                    <div  class="flex justify-between border-dashed border-t-2 border-gray-500 ">
-                        <h4>Total price</h4>
-                        <h4>BDT<span  id="total-price"></span></h4>
+                </div>
+                <!-- right side bill -->
+                <div class="space-y-7 border-dashed border-l-2 border-gray-500 pl-8">
+                    <h2 class="border-dashed border-b-2 border-gray-500 text-2xl font-semibold">Bills</h2>
+                    <div class="bg-[#ddddddea] space-y-10 p-12 rounded-2xl">
+                        <div class="flex justify-between border-dashed border-b-2 border-gray-500 ">
+                            <h4>seat<span class="bg-[#1DD100] rounded-2xl px-2">0</span></h4>
+                            <h4>price</h4>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>c2</p>
+                            <p>550</p>
+                        </div>
+                        <div class="flex justify-between border-dashed border-t-2 border-gray-500 ">
+                            <h4 class="font-semibold">Total price</h4>
+                            <h4 class="font-semibold">BDT<span id="total-price"></span></h4>
+                        </div>
+                        <div class="space-y-2  lg:space-x-2 ">
+                            <input class="font-semi-bold py-3 px-6 rounded-xl" type="text"
+                                placeholder="Have any Coupon?">
+                            <button
+                                class="bg-[#1DD100] text-white text-xl font-bold py-3 px-6 rounded-xl">Apply</button>
+                        </div>
+                        <div class="flex justify-between border-dashed border-t-2 border-gray-500 ">
+                            <h4 class="font-semibold">Grand Total</h4>
+                            <h4 class="font-semibold">BDT<span id="grand-total"></span></h4>
+                        </div>
                     </div>
                     <div>
-                        <input class="font-bold py-3 px-6 rounded-xl" type="text" placeholder="Have any Coupon?">
-                        <button class="bg-[#1DD100] text-white text-xl font-bold py-3 px-6 rounded-xl">Apply</button>
+                        <h3 class="font-semibold">Passenger Name*</h3>
+                        <input class="font-semi-bold py-3 px-6 rounded-xl border-2 w-full border-gray-500" type="text"
+                            placeholder="Enter Your Name">
                     </div>
-                    <div  class="flex justify-between border-dashed border-t-2 border-gray-500 ">
-                        <h4>Grand Total</h4>
-                        <h4>BDT<span id="grand-total"></span></h4>
+                    <div>
+                        <h3 class="font-semibold">Passenger Name*</h3>
+                        <input class="font-semi-bold py-3 px-6 rounded-xl border-2 w-full border-gray-500" type="number"
+                            name="" id="" placeholder="Phone Number*">
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Email ID</h3>
+                        <input class="font-semi-bold py-3 px-6 rounded-xl border-2 w-full border-gray-500" type="text"
+                            placeholder="Enter Your Email">
+                    </div>
+                    <div>
+                        <button class="btn btn-success text-center w-full bg-[#1DD100] text-white">Next</button>
+                    </div>
+                    <div class="flex justify-center gap-8">
+                        <P class="border-b-2 border-black">Terms and Conditions</P>
+                        <P class="border-b-2 border-black">Cancellation Policy</P>
                     </div>
                 </div>
-            </div>
             </div>
         </section>
     </main>
-
-    <footer>
-
+    <!-- footer -->
+    <footer class="bg-black text-white mt-28">
+        <div class="container mx-auto py-20 px-5">
+            <!-- upper -->
+            <div class="flex justify-between">
+                <div class="space-y-3">
+                    <h1 class="text-4xl font-extrabold">P-Ticket</h1>
+                    <p>P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-semibold">Download our app</h4>
+                    <div class="flex border-dashed border-2 border-gray-500">
+                        <img src="./images/playstore.png" alt="">
+                        <div>
+                            <h4>GET IT ON</h4>
+                            <h2>Google Play</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- lower -->
+            <div class="flex justify-between gap-10 mt-24 border-dashed border-t-2 border-gray-500">
+                <p>@all rights reserved, P-Ticket services limited.2024</p>
+                <div class="flex gap-8">
+                    <h3>Terms & condition</h3>
+                    <h3>Return & refund policy</h3>
+                    <h3>Privacy policy</h3>
+                </div>
+            </div>
+        </div>
     </footer>
 
 
-
+<script src="./js/ticket.js"></script>
 </body>
 
 </html>

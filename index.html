@@ -18,6 +18,10 @@
         .font-raleway {
             font-family: "Raleway", sans-serif;
         }
+        li{
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
 
 </head>
@@ -256,13 +260,14 @@
                             <h4>seat<span id="seat-add" class="bg-[#1DD100] rounded-2xl px-2">0</span></h4>
                             <h4>price</h4>
                         </div>
-                        <div class="flex justify-between">
-                            <p>c2</p>
-                            <p>550</p>
+                        <div class="">
+                            <ul id="t-description">
+
+                            </ul>
                         </div>
                         <div class="flex justify-between border-dashed border-t-2 border-gray-500 ">
                             <h4 class="font-semibold">Total price</h4>
-                            <h4 class="font-semibold">BDT<span id="total-price"></span></h4>
+                            <h4 class="font-semibold">BDT <span id="total-price">0</span></h4>
                         </div>
                         <div class="space-y-2  lg:space-x-2 ">
                             <input class="font-semi-bold py-3 px-6 rounded-xl" type="text"
@@ -272,7 +277,7 @@
                         </div>
                         <div class="flex justify-between border-dashed border-t-2 border-gray-500 ">
                             <h4 class="font-semibold">Grand Total</h4>
-                            <h4 class="font-semibold">BDT<span id="grand-total"></span></h4>
+                            <h4 class="font-semibold">BDT<span id="grand-total">0</span></h4>
                         </div>
                     </div>
                     <div>
